@@ -10,6 +10,17 @@ $ git clone https://github.com/sibedge-llc/plv8-build.git
 $ cd plv8-build
 $ sudo make install
 ```
+
+## Docker
+You can run PostgreSQL 13 with plv8 in Docker.<br />
+```
+$ git clone https://github.com/sibedge-llc/plv8-build.git
+$ cd plv8-build/docker
+$ git checkout pg13-2.3.15
+$ docker build -t pg13-plv8-2
+$ docker run -it -d --name pg13-plv8-2 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432/tcp pg13-plv8-2
+```
+
 ## Test the installation
 Create extension script should be executed at first. Please be aware that superuser or database owner privileges are needed
 ```sql
