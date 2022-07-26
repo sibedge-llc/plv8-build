@@ -1,4 +1,17 @@
-# Plv8-build: the easiest way to install PLV8 extension to current PostgreSQL release version
+# This project has been deprecated and is no longer updated.
+## Suggested Alternatives
+Use our Docker-images with postgres and plv8. It's free! Images based on Debian and Alpine are available.
+
+```
+docker pull sibedge/postgres-plv8
+```
+
+Pay attention, that BigInt is not serializable in v8 and [by default in plv8 v3.0.0 and higher BigInt numbers are converted into string(!)](https://github.com/plv8/plv8/issues/485). But if you need BigInt as numbers support, use this image with Postgres and specific version of plv8:
+
+```
+docker pull sibedge/postgres-plv8-bigint
+```
+
 ## Build author
 * Alexey Fadeev fadeevas@sibedge.com, sibedge, Tomsk, Russia
 ## Installation
