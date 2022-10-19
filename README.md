@@ -1,6 +1,6 @@
 # This project has been deprecated and is no longer updated.
 ## Suggested Alternatives
-Use our Docker-images with postgres and plv8. It's free! Images based on Debian and Alpine are available.
+Use our [Docker-images with postgres and plv8](https://hub.docker.com/r/sibedge/postgres-plv8). It's free! Images based on Debian and Alpine are available.
 
 ```
 docker pull sibedge/postgres-plv8
